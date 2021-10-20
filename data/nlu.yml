@@ -1,0 +1,118 @@
+version: "2.0"
+# user intents with examples
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - Hallo
+    - hi there
+    - greetings
+    - howdy
+    - Hi
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thanks
+    - thank you
+    - cheers
+    - exit
+    - quit
+
+# weather.... 
+- intent: weather_query
+  examples: |
+    - whats the weather
+    - weather
+    - temparature
+    - what is the weather?
+    - What's the weather today?
+    - Tell me the weather
+
+# example questions when location is given by the user
+- intent: weather_in_city
+  examples: |
+    - what's the weather in [Berlin](location) at the moment?
+    - what's the weather in [London](location) today?
+    - show me what's the weather in [Paris](location)
+    - i wonder what is the weather in [Vilnius](location) right now?
+    - is the weather nice in [Dhaka](location) today?
+    - i am going to [London](location) today and I wonder what is the weather out there?
+    - i am planning my trip to [India](location). What is the weather out there?
+    - show me the weather in [Dublin](location), please
+    - in [London](location)
+    - [Dhaka](location)
+    - oh, sorry, in [Italy](location)
+    - tell me the weather in [India](location)
+    - the weather condition in [Italy](location)
+    - hows weather in [India](location)
+    - weather in [Dhaka](location)
+    - [mumbai](location)
+    - Temperature at [Paris](location)
+    - [USA](location)
+    - [Paris](location)
+    - [Paris](location) Temerature
+    - [paris](location)
+    - whats weather in [USA](location)
+    - hows [Paris](location)
+    - hows [Berlin](location) today
+    - weather in [USA](location)
+    - in [Mumbai](location)
+    - hows weather in [Berlin](location)
+    - hows weather in [Dublin](location)
+    - hows weather in [Mumbai](location)
+    - hows weather in [mumbai](location)
+    - Hows [USA](location) doing today
+    - in [USA](location)
+    - hows [USA](location) doing today?
+    - [USA](location)?
+    - hows [Paris](location) today?
+    - may I know weather today
+    - temperature in [Goa](location)
+    - hows weather in [Goa](location)
+    - temperature in [USA](location)
+    - hows weather in [England](location)
+    - whats the weather in [England](location)
+    - whats the weather in [Chennai](location)
+    - in [Paris](location)
+    - in [Chennai](location)
+    - hows [Mumbai](location)
+    - weather in [London](location)
+
+# tricky questions.... 
+- intent: who_are_you
+  examples: |
+    - who are you
+    - are you a bot
+    - what is your name
+    - are you human
+    - what are you
+
+# questions about what can I do
+- intent: capabilities
+  examples: |
+    - what can you do
+    - what are your capabilities
+    - what are you good at
+    - what are you good for
+    - any instructions
+    - instructions
+    - how do i use this
+    - info
+    - information
+    - help
+    - can you help me
+
+- intent: out_of_scope
+  examples: |
+    -I want to order food
+    -What is 2 + 2?
+    -Who's the US President?

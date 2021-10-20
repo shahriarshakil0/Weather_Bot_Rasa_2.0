@@ -1,0 +1,38 @@
+version: "2.0"
+
+
+# four simple stories, one with location information given, and one without it in which case it is requested separately.
+
+stories:
+
+- story: wx_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_query
+  - action: utter_weather_query
+  # - action: action_weather
+
+- story: wx_2
+  steps:
+  - intent: weather_in_city
+  - action: action_weather
+  - action: action_clear
+
+
+- story: who_are_you
+  steps:
+  - intent: who_are_you
+  - action: utter_who_are_you
+  - intent: who_are_you
+  - action: utter_who_are_you
+
+
+# and what can I do
+- story: capabilities
+  steps:
+  - intent: capabilities
+  - action: utter_capabilities
+
+
+
